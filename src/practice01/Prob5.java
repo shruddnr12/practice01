@@ -9,15 +9,23 @@ public class Prob5 {   //문제를 보는 시각을 달리하자. 숫자로 보�
 			{
 			  String s = String.valueOf(i);			  
 	  		  
-			  for(int j = 0; j < s.length(); j++)
-			  {					 
-				  if(s.charAt(j) == '3' || s.charAt(j) == '6'|| s.charAt(j) == '9' )
-				  {  
-					  count++;					  
-				  }
-			  }		 
+			  for(int j =0 ; j < s.length(); j++)
+			  {
+				  if(s.charAt(j) == '3' || s.charAt(j) == '6' || s.charAt(j) == '9')
+				  {
+					  count++;
+				  }				  
+			  }
 			  
-			 
+			  if(count == 1)
+			  {
+				  System.out.println(s + "짝");
+			  }
+			  else if(count == 2)
+			  {
+				  System.out.println(s + "짝짝");
+			  }
+			  
 			  count = 0;				  			  
 			}
 	}
